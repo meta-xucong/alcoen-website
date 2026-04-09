@@ -2669,7 +2669,7 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
-  if (pathname === "/admin" && req.method === "GET") {
+  if ((pathname === "/admin" || pathname === "/admin.html") && req.method === "GET") {
     if (serveFile("/admin.html", res)) {
       return;
     }
