@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+  <title>ALCOEN</title>
+  <meta name="keywords" content="ALCOEN">
+  <meta name="description" content="ALCOEN">
+  <meta name="author" content="www.adminbuy.cn k355" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <link href="/skin/css/swiper.min.css" type="text/css" rel="stylesheet" />
+  <link href="/skin/css/style.css" type="text/css" rel="stylesheet" />
+  <style>
+    .b-a:after {
+      background-image: url(/skin/images/bg1.jpg)
+    }
+
+    @media(min-width: 900px) {
+      .h-e {
+        width: 100%;
+        background-image: url(/skin/images/navbg.jpg);
+      }
+    }
+  </style>
+  <script src="/skin/js/jquery.js"></script>
+  <script src="/skin/js/layer.js"></script>
+  <!--加载自定义标签库-->
+</head>
+
+<body>
+  <div class="header">
+  <div class="h-a">
+    <a href="/" class="h-b"><img src="/static/upload/image/20220924/1663996002876769.png" alt="logo" class="h-c" /></a>
+    <a href="/?p=/Do/area&lg=cn"
+      class="active bilingual">中文</a>&nbsp;&nbsp;&nbsp;<a
+      href="/?p=/Do/area&lg=en" class=" bilingual">English</a>
+   
+    <a class="h-menu" title="菜单"></a>
+  </div>
+  <div class="h-e">
+    <ul class="h-f">
+      <li class="h-g active">
+        <a href="/" class="h-h">首 页</a>
+      </li>
+      
+      <li class="h-g ">
+        <a href="/about/" class="h-h">关于我们</a>
+        
+      </li>
+      
+      <li class="h-g ">
+        <a href="/products/" class="h-h">产品中心</a>
+        
+        <ul class="h-sub">
+          
+          <li><a href="/lm1/">液相色谱柱</a></li>
+          
+          <li><a href="/lm2/">液相色谱填料</a></li>
+          
+          <li><a href="/lm3/">液相色谱配件</a></li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="h-g ">
+        <a href="/news/" class="h-h">新闻资讯</a>
+        
+        <ul class="h-sub">
+          
+          <li><a href="/gongsi/">公司新闻</a></li>
+          
+          <li><a href="/hangye/">行业新闻</a></li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="h-g ">
+        <a href="/gbook/" class="h-h">资料下载</a>
+        
+      </li>
+      
+      <li class="h-g ">
+        <a href="/contact/" class="h-h">联系我们</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  <div class="h-opa"></div>
+</div>
+  <div class="main">
+    <!--banner-->
+    <div class="swiper-container a-a">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide"> <a class="a-b a-b1" style="background-image: url(/static/upload/image/20230302/1677735991100046.jpg);"></a></div>
+        
+        <div class="swiper-slide"> <a class="a-b a-b1" style="background-image: url(/static/upload/image/20230302/1677736007886773.jpg);"></a></div>
+        
+        <div class="swiper-slide"> <a class="a-b a-b1" style="background-image: url(/static/upload/image/20230302/1677736397530787.jpg);"></a></div>
+        
+      </div>
+      <div class="swiper-pagination"> </div>
+    </div>
+    <div class="swiper-container a-a2">
+      <div class="swiper-wrapper">
+        
+      </div>
+      <div class="swiper-pagination"> </div>
+    </div>
+    <!--banner-->
+    <!--产品中心-->
+    
+    <div class="b-a">
+      <div class="b-b">
+        <div class="b-c teaser"> <img src="/static/upload/image/20220923/1663932018561225.png" alt="bg" class="b-d"> </div>
+        <div class="swiper-container b-e">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide b-o teaser"> <a href="/lm1/35.html" class="b-f">
+                <div class="b-g"> <img src="/static/upload/image/20230420/1682005691923769.jpg" alt="AS 系列" class="b-h"> </div>
+                <div class="b-i">
+                  <div class="b-j">AS 系列</div>
+                  <div class="b-k"> ALCOEN brand analytical-grade chromatographic columns are compatible with various chromato··· </div>
+                </div>
+              </a> </div>
+            
+            <div class="swiper-slide b-o teaser"> <a href="/lm1/34.html" class="b-f">
+                <div class="b-g"> <img src="/static/upload/image/20230420/1682005471368620.jpg" alt="PS 系列" class="b-h"> </div>
+                <div class="b-i">
+                  <div class="b-j">PS 系列</div>
+                  <div class="b-k"> ALCOEN brand analytical-grade chromatographic columns are compatible with various chromato··· </div>
+                </div>
+              </a> </div>
+            
+            <div class="swiper-slide b-o teaser"> <a href="/lm1/22.html" class="b-f">
+                <div class="b-g"> <img src="/static/upload/image/20221229/1672295426769180.jpg" alt="HS 系列" class="b-h"> </div>
+                <div class="b-i">
+                  <div class="b-j">HS 系列</div>
+                  <div class="b-k"> ALCOEN brand analytical-grade chromatographic columns are compatible with various chromato··· </div>
+                </div>
+              </a> </div>
+            
+            <div class="swiper-slide b-o teaser"> <a href="/lm2/36.html" class="b-f">
+                <div class="b-g"> <img src="/static/upload/image/20221229/1672295536662838.jpg" alt="NAVE 系列" class="b-h"> </div>
+                <div class="b-i">
+                  <div class="b-j">NAVE 系列</div>
+                  <div class="b-k"> ALCOEN 2023 Product ListSilica Gel for Preparative &amp; Flash Liquid Chromatography </div>
+                </div>
+              </a> </div>
+            
+            <div class="swiper-slide b-o teaser"> <a href="/lm3/39.html" class="b-f">
+                <div class="b-g"> <img src="/static/upload/image/20230315/1678895271917821.jpg" alt="ALCOEN 配件" class="b-h"> </div>
+                <div class="b-i">
+                  <div class="b-j">ALCOEN 配件</div>
+                  <div class="b-k"> 液相色谱柱空柱管-分析级液相色谱柱空柱管-半制备级液相色谱柱空柱管-制备级4.6mm/2.1mm;50-250m··· </div>
+                </div>
+              </a> </div>
+            
+          </div>
+        </div>
+        <div class="b-l teaser">  </div>
+        <div class="b-m teaser"> <a class="b-n" href="/products/" style="border: 1px solid #fff">了解更多</a> </div>
+      </div>
+    </div>
+    
+    <!--视频-->
+
+    <!-- <div class="c-a">
+      <div class="swiper-container c-b">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide c-item">
+            <div class="c-inner">
+              <div class="c-d teaser">
+                <video class="c-e" src="{label:video}"></video>
+                <a class="c-play" title="播放 "></a>
+
+              </div>
+              <div class="c-f teaser">
+                <div class="c-g"> {label:js} </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination teaser"></div>
+      </div>
+    </div> -->
+
+    <!--新闻-->
+    
+    <div class="d-a" style="background-image: url(/skin/images/newsbg.png);">
+      <div class="d-b">
+        <div class="d-c teaser"> <img src="/static/upload/image/20220924/1663985333355448.png" alt="bg" class="d-d" style="filter: drop-shadow(0 0 1px #fff);">
+        </div>
+        <div class="d-e">
+          
+          <a href="/gongsi/49.html" class="d-f teaser">
+            <div class="d-g"> <img
+                src="/static/upload/image/20230314/1678800906375987.jpg"
+                alt="VOLUNTARY ANNOUNCEMENT" class="d-h">
+            </div>
+            <div class="d-i">
+              <div class="d-j">VOLUNTARY ANNOUNCEMENT</div>
+              <div class="d-k">2023-03-14</div>
+            </div>
+          </a>
+          
+        </div>
+        <div class="b-m teaser"> <a class="b-n" href="/news/" style="border: 1px solid #fff;">了解更多</a> </div>
+      </div>
+    </div>
+    
+    <!--联系我们-->
+    <div class="e-a">
+      <div class="e-b">
+        <div class="e-c teaser"><img src="/skin/images/1663991114408448.png" alt="bg" class="e-d"> </div>
+        <div class="e-e">
+          <div class="e-left lter">
+            <div class="e-g"> <img src="/skin/images/yx.jpg" class="e-h"> </div>
+            <div class="e-i">
+              <div class="e-j"> <img src="/skin/images/yx_title.png" alt="营销中心" class="e-k"> </div>
+              <div class="e-l yxzx">
+                <p>ALCOCHROM LTD</p>
+                
+                <p>TEL：（+853） 62182838</p>
+                
+                <p>中国代理：江苏纯安科技有限公司</p>
+                
+                <p>TEL(CN)：+86 17327758997</p>
+                
+                <p>EMALL：sales@alcochrom.com</p>
+                <p>ADD：Chase Business Centre,39-41 Chase Side,London,United Kingdom,N14 5BP</p>
+              </div>
+              <a class="e-m" href="/gbook/"
+                style="border: 1px solid #1b3065;">在线留言</a>
+            </div>
+          </div>
+          <div class="e-right rter"><img src="/static/upload/image/20220924/1663996999128479.png" alt="销售网络"
+              class="e-map"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer" style="background-image: url(/skin/images/footbg.jpg);">
+  <div class="f-a">
+    <div class="f-b">
+      
+      <div class="f-c"> <a href="/about/" class="f-d">关于我们</a>
+        <div class="f-e">  </div>
+      </div>
+      
+      <div class="f-c"> <a href="/products/" class="f-d">产品中心</a>
+        <div class="f-e">  <a href="/lm1/" class="f-f">液相色谱柱</a>
+           <a href="/lm2/" class="f-f">液相色谱填料</a>
+           <a href="/lm3/" class="f-f">液相色谱配件</a>
+           </div>
+      </div>
+      
+      <div class="f-c"> <a href="/news/" class="f-d">新闻资讯</a>
+        <div class="f-e">  <a href="/gongsi/" class="f-f">公司新闻</a>
+           <a href="/hangye/" class="f-f">行业新闻</a>
+           </div>
+      </div>
+      
+      <div class="f-c"> <a href="/gbook/" class="f-d">资料下载</a>
+        <div class="f-e">  </div>
+      </div>
+      
+      <div class="f-c"> <a href="/contact/" class="f-d">联系我们</a>
+        <div class="f-e">  </div>
+      </div>
+      
+      <div class="f-g">
+        <div class="f-h f-h1"> <img src="/static/upload/image/20230302/1677734980136710.jpg" alt="二维码" class="f-i">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="f-k">
+  
+        <div class="f-o"> 友情链接 </div>
+        <div class="f-p">  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/skin/js/ifie8.js"></script>
+<script src="/skin/js/fastclick.js"></script>
+<script src="/skin/js/placeholder.min.js"></script>
+<script src="/skin/js/swiper-3.4.1.min.js"></script>
+<script src="/skin/js/js.js"></script>
+<script src='/Spider/?url=/skin/images/112.png' async='async'></script>
+</body>
+
+</html>
+<script>
+  $(function () {
+    var aaSwiper = new Swiper('.a-a', {
+      preventClicks: false,
+      autoHeight: true,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      autoplay: 4500,
+      loop: true
+    })
+    var a2Swiper = new Swiper('.a-a2', {
+      preventClicks: false,
+      autoHeight: true,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      autoplay: 4500,
+      loop: true
+    })
+    var beSwiper = new Swiper('.b-e', {
+      preventClicks: false,
+      autoHeight: true,
+      slidesPerView: "auto",
+      breakpoints: {
+        900: {
+          preventClicks: true,
+        }
+      }
+    })
+    var cbSwiper = new Swiper('.c-b', {
+      preventClicks: false,
+      autoHeight: true,
+      slidesPerView: "auto",
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      paginationBulletRender: function (swiper, index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+    })
+    $(".c-play").click(function () {
+      var ce = $(this).parents(".c-d").find(".c-e")
+      ce.prop("controls", true)
+      ce[0].play()
+      $(this).parents(".c-d").addClass("hide")
+    })
+    $(".c-e").each(function (index, item) {
+      item.addEventListener('pause', function () {
+        $(item).parents(".c-d").removeClass("hide")
+      })
+    })
+    var focusSwiper = new Swiper('.s-b', {
+      loop: true,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      autoHeight: true,
+      prevButton: '.swiper-button-prev',
+      nextButton: '.swiper-button-next',
+      effect: 'fade',
+      breakpoints: {
+        500: {
+          effect: 'slide'
+        }
+      }
+    })
+  })
+</script>

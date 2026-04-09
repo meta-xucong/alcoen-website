@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | ALCOCHROM</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <h1>Admin Console</h1>
+        <p>This admin edits the canonical site model used by both front-end rendering and API output.</p>
+        <div class="section-nav" id="sectionNav"></div>
+      </aside>
+      <main class="admin-main">
+        <div class="admin-toolbar">
+          <div>
+            <h2 id="sectionTitle">Loading...</h2>
+            <p id="sectionDesc">Please wait while content is loaded.</p>
+          </div>
+          <div class="admin-actions">
+            <div class="lang-admin-switch">
+              <button class="button-ghost" id="langEnBtn" type="button" style="color:#1b3065;border-color:#1b3065;">EN</button>
+              <button class="button-ghost" id="langZhBtn" type="button" style="color:#1b3065;border-color:#1b3065;">中文</button>
+            </div>
+            <a class="button-ghost" id="openSiteLink" href="/" style="color:#1b3065;border-color:#1b3065;">Open Website</a>
+            <button class="button-ghost" id="reloadButton" type="button" style="color:#1b3065;border-color:#1b3065;">Reload</button>
+            <button class="button-primary" id="saveButton" type="button">Save All</button>
+          </div>
+        </div>
+
+        <div class="notice" id="notice">Loading site data...</div>
+        <section class="admin-guide" id="sectionGuide"></section>
+        <div class="admin-form-grid" id="formRoot"></div>
+
+        <section class="upload-panel">
+          <h2>Image Upload</h2>
+          <div class="upload-row">
+            <input type="file" id="uploadInput" accept="image/*" />
+            <button class="button-primary" type="button" id="uploadButton">Upload</button>
+          </div>
+          <div class="upload-result" id="uploadResult">
+            Upload an image, then click into a field and it will auto-fill the uploaded URL.
+          </div>
+        </section>
+
+        <details class="json-panel">
+          <summary>Advanced JSON Editor</summary>
+          <p class="json-tip">Use this for batch fixes or debugging. "Apply JSON" updates form state without saving.</p>
+          <textarea id="editor" class="editor-area" spellcheck="false"></textarea>
+          <div class="admin-actions" style="margin-top:12px;">
+            <button class="button-ghost" id="applyJsonButton" type="button" style="color:#1b3065;border-color:#1b3065;">
+              Apply JSON To Forms
+            </button>
+            <button class="button-primary" id="saveJsonButton" type="button">Save JSON</button>
+          </div>
+        </details>
+      </main>
+    </div>
+    <script src="/admin.js"></script>
+  </body>
+</html>

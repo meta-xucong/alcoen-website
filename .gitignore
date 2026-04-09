@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Browser profiles
+.browser-profile/
+.browser-profile-live/
+
+# Temporary / reference files
+tmp-*
+reference/
+
+# Data (optional — keep if you want uploaded; usually ok for CMS sites)
+# data/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

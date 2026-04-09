@@ -1,0 +1,12 @@
+{
+  "name": "alcochrom-cn-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Corporate website with editable backend content.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "playwright-core": "^1.58.2"
+  }
+}
