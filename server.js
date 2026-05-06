@@ -23,7 +23,6 @@ const defaultNavItems = [
   { href: "/about", label: "ABOUT" },
   { href: "/products", label: "PRODUCT" },
   { href: "/news", label: "NEWS" },
-  { href: "/downloads", label: "DOWNLOAD" },
   { href: "/contact", label: "CONTACT" }
 ];
 
@@ -630,7 +629,7 @@ const canonicalToViewModel = (canonical) => {
   topSorts.forEach((item) => {
     topSortByName[asString(item.name).trim().toUpperCase()] = item;
   });
-  const orderedTopNames = ["ABOUT", "PRODUCT", "NEWS", "DOWNLOAD", "CONTACT"];
+  const orderedTopNames = ["ABOUT", "PRODUCT", "NEWS", "CONTACT"];
   const dynamicNavItems = [{ href: "/", label: "HOME" }];
   orderedTopNames.forEach((name) => {
     if (!topSortByName[name]) {
@@ -640,7 +639,7 @@ const canonicalToViewModel = (canonical) => {
       ABOUT: "/about",
       PRODUCT: "/products",
       NEWS: "/news",
-      DOWNLOAD: "/downloads",
+      
       CONTACT: "/contact"
     };
     dynamicNavItems.push({
@@ -711,6 +710,17 @@ const canonicalToViewModel = (canonical) => {
     });
   }
 
+  const heroSlides2 = asArray(canonical.slides)
+    .filter((item) => asString(item.gid) === "home2")
+    .sort(sortByDisplay)
+    .map((item) => ({
+      title: item.title || "",
+      subtitle: item.subtitle || "",
+      image: item.pic || "",
+      buttonText: item.link ? "MORE" : "",
+      buttonLink: item.link || "/products"
+    }));
+
   return {
     canonical,
     navItems: dynamicNavItems.length > 1 ? dynamicNavItems : defaultNavItems,
@@ -729,6 +739,7 @@ const canonicalToViewModel = (canonical) => {
       email: company.email || ""
     },
     heroSlides,
+    heroSlides2,
     about: {
       headline: (aboutSingle && aboutSingle.title) || "ABOUT",
       subheadline: (aboutSingle && aboutSingle.subtitle) || "Company Introduction",
@@ -1685,7 +1696,6 @@ const pageHrefByKey = {
   about: "/about",
   product: "/products",
   news: "/news",
-  download: "/downloads",
   contact: "/contact"
 };
 
@@ -1693,6 +1703,10 @@ const langThemeAssets = {
   en: {
     logo: "/static/upload/image/20221116/1668593341428641.png",
     innerHero: "/static/upload/image/20220923/1663919576870343.jpg",
+    innerHeroAbout: "/static/upload/image/20260422/1776840963451334.jpg",
+    innerHeroProduct: "/static/upload/image/20260422/1776840897180043.jpg",
+    innerHeroNews: "/static/upload/image/20260422/1776840936897783.jpg",
+    innerHeroContact: "/static/upload/image/20260422/1776840950731468.jpg",
     productTitleImage: "/skin/images/1663932018561226.png",
     newsTitleImage: "/skin/images/1663985333355449.png",
     contactPanelImage: "/static/upload/image/20220924/1663991114408447.png",
@@ -1709,6 +1723,10 @@ const langThemeAssets = {
   zh: {
     logo: "/static/upload/image/20220924/1663996002876769.png",
     innerHero: "/static/upload/image/20220923/1663919576870343.jpg",
+    innerHeroAbout: "/static/upload/image/20260422/1776840963451334.jpg",
+    innerHeroProduct: "/static/upload/image/20260422/1776840897180043.jpg",
+    innerHeroNews: "/static/upload/image/20260422/1776840936897783.jpg",
+    innerHeroContact: "/static/upload/image/20260422/1776840950731468.jpg",
     productTitleImage: "/static/upload/image/20220923/1663932018561225.png",
     newsTitleImage: "/static/upload/image/20220924/1663985333355448.png",
     contactPanelImage: "/skin/images/1663991114408448.png",
@@ -1992,7 +2010,6 @@ const buildClassicNavItems = (lang) => [
   { key: "about", label: t(lang, "about"), href: pageHrefByKey.about, children: [] },
   { key: "product", label: t(lang, "product"), href: pageHrefByKey.product, children: [] },
   { key: "news", label: t(lang, "news"), href: pageHrefByKey.news, children: [] },
-  { key: "download", label: t(lang, "download"), href: pageHrefByKey.download, children: [] },
   { key: "contact", label: t(lang, "contact"), href: pageHrefByKey.contact, children: [] }
 ];
 
@@ -2107,6 +2124,9 @@ const classicInitScript = `
     if (!window.Swiper) return;
     if (document.querySelector('.a-a')) {
       new Swiper('.a-a', { preventClicks: false, autoHeight: true, pagination: '.swiper-pagination', paginationClickable: true, autoplay: 4500, loop: true });
+    }
+    if (document.querySelector('.a-a2')) {
+      new Swiper('.a-a2', { preventClicks: false, autoHeight: true, pagination: '.swiper-pagination', paginationClickable: true, autoplay: 4500, loop: true });
     }
     if (document.querySelector('.b-e')) {
       new Swiper('.b-e', { preventClicks: false, autoHeight: true, slidesPerView: 'auto', breakpoints: { 900: { preventClicks: true } } });
@@ -2276,11 +2296,12 @@ const classicHomePage = (site, lang, currentPath) =>
           .map((slide) => `<div class="swiper-slide"><a class="a-b a-b1" style="background-image:url(${localAssetUrl(slide.image)});"></a></div>`)
           .join("")}
       </div><div class="swiper-pagination"></div></div>
-      <div class="swiper-container a-a2"><div class="swiper-wrapper"></div><div class="swiper-pagination"></div></div>
+      <div class="swiper-container a-a2"><div class="swiper-wrapper">${site.heroSlides2.map((slide) => `<div class="swiper-slide"><a class="a-b a-b2" style="background-image:url(${localAssetUrl(slide.image)});"></a></div>`).join("")}</div><div class="swiper-pagination"></div></div>
       <div class="b-a"><div class="b-b">
         <div class="b-c teaser"><img src="${localAssetUrl(theme.productTitleImage)}" alt="bg" class="b-d"></div>
         <div class="swiper-container b-e"><div class="swiper-wrapper">
           ${products
+            .slice(0, 9)
             .map(
               (product) => `<div class="swiper-slide b-o teaser"><a href="${withLang(`/products/${product.slug}`, lang)}" class="b-f">
             <div class="b-g"><img src="${localAssetUrl(product.image)}" alt="${escapeHtml(product.name)}" class="b-h"></div>
@@ -2362,7 +2383,7 @@ const classicProductsPage = (site, lang, currentPath, categoryFilter = "", pageN
     const query = params.toString();
     return withLang(`/products${query ? `?${query}` : ""}`, lang);
   });
-  const hero = langTheme(lang).innerHero || "";
+  const hero = langTheme(lang).innerHeroProduct || "";
   const subLinks = productChildrenForLang(site, lang);
   return classicLayout({
     site,
@@ -2395,11 +2416,12 @@ const classicProductsPage = (site, lang, currentPath, categoryFilter = "", pageN
 };
 
 const classicProductDetailPage = (site, lang, currentPath, product) => {
-  const hero = langTheme(lang).innerHero || "";
+  const hero = langTheme(lang).innerHeroProduct || "";
   const products = localizedProducts(site, lang);
   const resolved = products.find((item) => item.slug === product.slug) || product;
   const subLinks = productChildrenForLang(site, lang);
-  const detailImage = asString(asArray(resolved.gallery)[0] || resolved.image);
+  const gallery = asArray(resolved.gallery).filter(Boolean);
+  const detailImage = asString(gallery[0] || resolved.image);
   const specs = asArray(resolved.specRowsComputed)
     .map((row) => ({
       label: asString(row.label),
@@ -2435,7 +2457,7 @@ const classicProductDetailPage = (site, lang, currentPath, product) => {
       })}
       <div class="k-a"><div class="k-b">
         <div class="k-c">
-          <div class="k-left"><div class="k-visual"><img src="${localAssetUrl(detailImage)}" alt="${escapeHtml(resolved.name)}" class="k-e"></div></div>
+          <div class="k-left">${gallery.length > 1 ? `<div class="wrap">${gallery.map((img, idx) => `<input type="radio" name="pic" ${idx === 0 ? 'checked' : ''}>`).join('')}${gallery.map((img) => `<img src="${localAssetUrl(img)}" alt="" class="k-e">`).join('')}</div>` : `<div class="k-visual"><img src="${localAssetUrl(detailImage)}" alt="${escapeHtml(resolved.name)}" class="k-e"></div>`}</div>
           <div class="k-right">
             <div class="k-g" style="font-weight:bold;font-size:22px;">${escapeHtml(resolved.name)}</div>
             ${showSummary ? `<div class="k-j">${escapeHtml(rightSummary)}</div>` : ""}
@@ -2446,7 +2468,7 @@ const classicProductDetailPage = (site, lang, currentPath, product) => {
                 )}</div></div>`
               )
               .join("")}
-            <a href="${withLang(resolved.downloadLinkComputed || "/downloads", lang)}" class="k-n">${escapeHtml(downloadLabel)}</a>
+            ${resolved.downloadLink ? `<a href="${withLang(resolved.downloadLink, lang)}" class="k-n">${escapeHtml(downloadLabel)}</a>` : `<a href="javascript:void(0);" class="k-n disabled" style="opacity:0.5;cursor:not-allowed;background-color:#ccc;">${escapeHtml(downloadLabel)}</a>`}
           </div>
         </div>
         <div class="k-o"><div class="k-p"><div class="k-q">${escapeHtml(introTitle)}</div></div><div class="k-r" id="maximg">${detailHtml}</div></div>
@@ -2471,7 +2493,7 @@ const classicNewsPage = (site, lang, currentPath, pageNumber = 1) =>
     const query = params.toString();
     return withLang(`/news${query ? `?${query}` : ""}`, lang);
   });
-  const hero = langTheme(lang).innerHero || "";
+  const hero = langTheme(lang).innerHeroNews || "";
   const subLinks = lang === "zh" ? newsChildrenForLang(site, lang) : [];
   return classicLayout({
     site,
@@ -2507,7 +2529,7 @@ const classicNewsPage = (site, lang, currentPath, pageNumber = 1) =>
 const classicNewsDetailPage = (site, lang, currentPath, item) =>
 {
   const news = localizedNews(site, lang);
-  const hero = langTheme(lang).innerHero || "";
+  const hero = langTheme(lang).innerHeroNews || "";
   const resolved = news.find((n) => n.slug === item.slug) || item;
   const subLinks = lang === "zh" ? newsChildrenForLang(site, lang) : [];
   const currentIndex = news.findIndex((n) => n.slug === resolved.slug);
@@ -2655,6 +2677,40 @@ const localizedSingleImage = (single, lang) => {
   return asString(source.pic || source.ico);
 };
 
+const legacyUrlMap = {
+  "/ABOUTen/": "/about",
+  "/PRODUCTen/": "/products",
+  "/PRODUCTen_2/": "/products?page=2",
+  "/PRODUCTen_3/": "/products?page=3",
+  "/PRODUCTen_4/": "/products?page=4",
+  "/NEWSen/": "/news",
+  "/contacten/": "/contact",
+  "/list_22/": "/products?cat=list_22",
+  "/list_23/": "/products?cat=list_23",
+  "/list_24/": "/products?cat=list_24",
+  "/list_25/": "/products?cat=list_25",
+  "/list_22/73.html": "/products/uplc-series",
+  "/list_23/81.html": "/products/shg-grade",
+  "/list_24/83.html": "/products/hplc-guard-cartridge",
+  "/list_22/74.html": "/products/id-series",
+  "/list_22/75.html": "/products/dj-series",
+  "/list_22/76.html": "/products/ag-series",
+  "/list_22/77.html": "/products/p-series",
+  "/list_22/78.html": "/products/s-series",
+  "/list_23/80.html": "/products/shps-grade",
+  "/list_23/79.html": "/products/hps-grade",
+  "/list_24/88.html": "/products/inlet-solvent-fiters",
+  "/list_24/87.html": "/products/in-line-filter",
+  "/list_24/86.html": "/products/stainless-steel-fittings",
+  "/list_24/85.html": "/products/fingertight-fittings",
+  "/list_24/84.html": "/products/semi-preparative-guard-cartridge",
+  "/list_24/82.html": "/products/uplc-guard-cartridge",
+  "/list_25/55.html": "/products/cetrorelix-acetate-leuprorelin",
+  "/list_25/54.html": "/products/tirzepatide-linaclotide",
+  "/list_25/53.html": "/products/semaglutide",
+  "/NEWSen/50.html": "/news/voluntary-announcement"
+};
+
 const server = http.createServer(async (req, res) => {
   const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
   const pathname = parsedUrl.pathname;
@@ -2662,6 +2718,13 @@ const server = http.createServer(async (req, res) => {
   const categoryFilter = asString(parsedUrl.searchParams.get("cat"));
   const pageNumber = Math.max(1, asInt(parsedUrl.searchParams.get("page"), 1));
   const currentPath = `${pathname}${parsedUrl.search}`;
+
+  const legacyTarget = legacyUrlMap[pathname];
+  if (legacyTarget && req.method === "GET") {
+    res.writeHead(302, { Location: withLang(legacyTarget, lang) });
+    res.end();
+    return;
+  }
 
   if (pathname.startsWith("/uploads/") || pathname.startsWith("/assets/") || pathname === "/styles.css" || pathname === "/app.js" || pathname === "/admin.js") {
     if (serveFile(pathname, res)) {
@@ -2717,7 +2780,7 @@ const server = http.createServer(async (req, res) => {
         "about",
         t(lang, "about"),
         localizedSingleHtml(aboutSingle, lang),
-        "",
+        langTheme(lang).innerHeroAbout,
         localizedSingleBlocks(aboutSingle, lang)
       )
     );
@@ -2785,7 +2848,7 @@ const server = http.createServer(async (req, res) => {
         "contact",
         t(lang, "contact"),
         localizedSingleHtml(contactSingle, lang),
-        "",
+        langTheme(lang).innerHeroContact,
         localizedSingleBlocks(contactSingle, lang)
       )
     );

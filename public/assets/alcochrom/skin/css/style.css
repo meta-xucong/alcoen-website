@@ -1948,6 +1948,7 @@ body * {
 	float: right;
 	width: 5.1rem;
 	padding-top: .35rem;
+	text-align: left;  /* 添加：改为左对齐 */
 }
 
 .k-g {
@@ -1956,6 +1957,7 @@ body * {
 	padding-bottom: .3rem;
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: .35rem;
+	text-align: left;  /* 添加：左对齐 */
 }
 
 .k-h {
@@ -1977,8 +1979,9 @@ body * {
 
 .k-k {
 	width: 100%;
-	font-size: 0;
+	/* font-size: 0; */
 	margin-bottom: .12rem;
+	text-align: left;  /* 添加：确保左对齐 */
 }
 
 .k-l {
@@ -1988,6 +1991,7 @@ body * {
 	font-size: calc(12px - 0.12rem + 0.16rem);
 	color: #666;
 	line-height: 1.5;
+	text-align: left;  /* 添加：左对齐 */
 }
 
 .k-m {
@@ -1997,6 +2001,7 @@ body * {
 	font-size: calc(12px - 0.12rem + 0.16rem);
 	color: #666;
 	line-height: 1.5;
+	text-align: left;  /* 添加：左对齐 */
 }
 
 .k-n {
@@ -2011,6 +2016,16 @@ body * {
 	background-size: 100% 100%;
 	font-size: .16rem;
 	color: #1b3065;
+}
+
+/* 禁用状态按钮样式 */
+.k-n.disabled {
+    	opacity: 0.5;
+    	cursor: not-allowed;
+    	background-color: #ccc !important;
+    	border-color: #999 !important;
+    	color: #666 !important;
+    	pointer-events: none;  /* 禁止点击 */
 }
 
 .k-o {
@@ -3481,3 +3496,22 @@ body * {
 	text-align: center;
 	padding: 20px 0
 }
+/* product gallery carousel */
+.wrap { position: relative; overflow: hidden; width: 100%; height: 100%; }
+.wrap input { position: absolute; bottom: 10px; z-index: 2; }
+.wrap input:nth-of-type(1) { left: 40%; }
+.wrap input:nth-of-type(2) { left: 45%; }
+.wrap input:nth-of-type(3) { left: 50%; }
+.wrap input:nth-of-type(4) { left: 55%; }
+.wrap input:nth-of-type(5) { left: 60%; }
+.wrap img { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0; transition: 1s; }
+.wrap input:nth-of-type(1):checked~img:nth-of-type(1),
+.wrap input:nth-of-type(1):checked~div:nth-of-type(1) { opacity: 1; }
+.wrap input:nth-of-type(2):checked~img:nth-of-type(2),
+.wrap input:nth-of-type(2):checked~div:nth-of-type(2) { opacity: 1; }
+.wrap input:nth-of-type(3):checked~img:nth-of-type(3),
+.wrap input:nth-of-type(3):checked~div:nth-of-type(3) { opacity: 1; }
+.wrap input:nth-of-type(4):checked~img:nth-of-type(4),
+.wrap input:nth-of-type(4):checked~div:nth-of-type(4) { opacity: 1; }
+.wrap input:nth-of-type(5):checked~img:nth-of-type(5),
+.wrap input:nth-of-type(5):checked~div:nth-of-type(5) { opacity: 1; }

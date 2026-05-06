@@ -1070,7 +1070,7 @@
                       </div>
                       <div class="form-grid">
                         ${renderField({ path: `${base}.id`, label: L("ID", "ID"), map: L("Data identity", "数据标识"), kind: "int", type: "number" })}
-                        ${renderField({ path: `${base}.gid`, label: L("Group", "分组"), map: L("Usually home", "通常为 home") })}
+                        ${renderField({ path: `${base}.gid`, label: L("Group", "分组"), map: L("home = main banner, home2 = sub banner", "home = 主轮播, home2 = 副轮播") })}
                         ${renderField({ path: `${base}.sorting`, label: L("Sorting", "排序"), map: L("Slide order", "轮播顺序"), kind: "int", type: "number" })}
                         ${renderField({ path: `${base}.link`, label: L("Link URL", "跳转链接"), map: L("Click action URL", "点击跳转地址"), full: true })}
                         ${renderField({ path: `${base}.title`, label: L("Title", "标题"), map: L("Overlay title text", "叠加标题文本"), full: true })}
