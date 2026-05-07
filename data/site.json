@@ -3,7 +3,7 @@
     "title": "ALCOEN",
     "subtitle": "ALCOEN",
     "domain": "https://www.alcochrom.com",
-    "logo": "https://www.alcochrom.com/static/upload/image/20221116/1668593341428641.png",
+    "logo": "/static/upload/image/20221116/1668593341428641.png",
     "keywords": "",
     "description": "Alcochrom is a nanotechnology company originating from the UK.",
     "icp": "",
@@ -136,7 +136,7 @@
       "outlink": "",
       "gnote": "",
       "ico": "",
-      "pic": "https://www.alcochrom.com/static/upload/image/20220924/1663996999128479.png",
+      "pic": "/static/upload/image/20220924/1663996999128479.png",
       "keywords": "",
       "description": "Company Introduction ALCOEN is a company specializing in the development of chromatography fillers with an efficient R&D team. Over the years, we have accumulated rich experience in the research and development of nano-microspheres and provided complete soluti",
       "content": "\n<p style=\"text-align:center\"><strong><span style=\"font-family: 'Microsoft JhengHei';font-size: 24px\">Company</span></strong><strong><span style=\"font-family: 'Microsoft JhengHei';font-size: 24px\"> <span style=\"font-family:Microsoft JhengHei\">Introduction</span></span></strong></p><p><span style=\";font-family:'Microsoft JhengHei';font-size:16px\"> </span></p><p style=\"text-indent: 14px\"><span style=\";font-family:'Microsoft JhengHei';font-size:14px\">ALCOEN is a company specializing in the development of chromatography fillers with an efficient R&amp;D team. Over the years, we have accumulated rich experience in the research and development of nano-microspheres and provided complete solutions for pharmaceutical factories through industrial integration, committed to reducing costs for the global pharmaceutical industry.</span></p><p style=\"text-indent: 14px\"><span style=\";font-family:'Microsoft JhengHei';font-size:14px\">We have established a complete development system, providing customers with high-quality chromatography fillers and advanced chromatography technology. Our team consists of a group of experienced and skilled scientists and engineers who are committed to translating the latest scientific technology into practical applications and continuously promoting the advancement and innovation of chromatography technology.</span></p><p style=\"text-indent: 14px\"><span style=\";font-family:'Microsoft JhengHei';font-size:14px\">Our product range covers various types of chromatography media, including normal phase, reverse phase, ion exchange, affinity chromatography, etc., to meet the diverse needs of different customers. </span><span style=\";font-family:'Microsoft JhengHei';font-size:14px\">Our solutions provide comprehensive support to pharmaceutical companies, bridging the gap between technology and customer usage, helping them reduce costs, improve efficiency, and create greater </span><span style='font-family: \"Microsoft JhengHei\"; text-align: right;'>value. Our mission is to provide customers with high-quality products and services, and become one of the world's leading suppliers of chromatography media. We will continue to strive for excellence and innovation, and provide customers with even better products and services. The pursuit of technological perfection and innovation is our eternal driving force.</span></p><p style=\"text-align:right\"><span style=\";font-family:'Microsoft JhengHei';font-size:14px\"> </span></p><p><span style=\";font-family:'Microsoft JhengHei';font-size:14px\">S</span><span style=\";font-family:宋体;font-size:14px\"><span style=\"font-family:Microsoft JhengHei\">incerely</span></span></p><p><br/></p>\n",
@@ -176,7 +176,7 @@
       "outlink": "",
       "gnote": "",
       "ico": "",
-      "pic": "https://www.alcochrom.com/static/upload/image/20220924/1663996999128479.png",
+      "pic": "/static/upload/image/20220924/1663996999128479.png",
       "keywords": "",
       "description": "ALCOCHROM LTD Headquarter address(UK)：Chase Business Centre,39-41 Chase Side,London,United Kingdom,N14 5BP Production center(Macao)：Alameda Doutor Carlos d'Assumpcao No.180 TONG NAM AH CENTRAL COMERCIO 13/F T, Macau China Office： Room 633, Building A, Phase I,",
       "content": "\n<p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; box-sizing: border-box; line-height: 2; color: rgb(102, 102, 102); max-width: 100%; font-family: Arial, \"Microsoft YaHei\"; white-space: normal; background-color: rgb(255, 255, 255); font-size: 16px !important;'>ALCOCHROM LTD</p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; box-sizing: border-box; line-height: 2; color: rgb(102, 102, 102); max-width: 100%; font-family: Arial, \"Microsoft YaHei\"; white-space: normal; background-color: rgb(255, 255, 255); font-size: 16px !important;'>Headquarter address(UK)：Chase Business Centre,39-41 Chase Side,London,United Kingdom,N14 5BP<br style=\"box-sizing: border-box; line-height: 2; max-width: 100%;\"/></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; box-sizing: border-box; line-height: 2; color: rgb(102, 102, 102); max-width: 100%; font-family: Arial, \"Microsoft YaHei\"; white-space: normal; background-color: rgb(255, 255, 255); font-size: 16px !important;'>Production center(Macao)：Alameda Doutor Carlos d'Assumpcao No.180 TONG NAM AH CENTRAL COMERCIO 13/F T, Macau</p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; box-sizing: border-box; line-height: 2; color: rgb(102, 102, 102); max-width: 100%; font-family: Arial, \"Microsoft YaHei\"; white-space: normal; background-color: rgb(255, 255, 255); font-size: 16px !important;'>China Office： Room 633, Building A, Phase I, Zhongdan Ecological Life Science Industrial Park, No. 3-1 Xinjinhu Road, Jiangbei New District, Nanjing</p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; box-sizing: border-box; line-height: 2; color: rgb(102, 102, 102); max-width: 100%; font-family: Arial, \"Microsoft YaHei\"; white-space: normal; background-color: rgb(255, 255, 255); font-size: 16px !important;'>Email: sales@alcochrom.com</p>\n",
@@ -1266,7 +1266,7 @@
     {
       "id": 1,
       "gid": "home",
-      "pic": "https://www.alcochrom.com/static/upload/image/20230302/1677735991100046.jpg",
+      "pic": "/static/upload/image/20230302/1677735991100046.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1275,7 +1275,7 @@
     {
       "id": 2,
       "gid": "home",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260415/1776230315153499.jpg",
+      "pic": "/static/upload/image/20260415/1776230315153499.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1284,7 +1284,7 @@
     {
       "id": 3,
       "gid": "home",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260415/1776229659221716.jpg",
+      "pic": "/static/upload/image/20260415/1776229659221716.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1293,7 +1293,7 @@
     {
       "id": 4,
       "gid": "home",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260417/1776435644992796.jpg",
+      "pic": "/static/upload/image/20260417/1776435644992796.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1302,7 +1302,7 @@
     {
       "id": 5,
       "gid": "home",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260417/1776435625143159.jpg",
+      "pic": "/static/upload/image/20260417/1776435625143159.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1311,7 +1311,7 @@
     {
       "id": 6,
       "gid": "home2",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260417/1776435959115755.jpg",
+      "pic": "/static/upload/image/20260417/1776435959115755.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1320,7 +1320,7 @@
     {
       "id": 7,
       "gid": "home2",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260417/1776435997786431.jpg",
+      "pic": "/static/upload/image/20260417/1776435997786431.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1329,7 +1329,7 @@
     {
       "id": 8,
       "gid": "home2",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260417/1776435972691749.jpg",
+      "pic": "/static/upload/image/20260417/1776435972691749.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1338,7 +1338,7 @@
     {
       "id": 9,
       "gid": "home2",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260417/1776436011993831.jpg",
+      "pic": "/static/upload/image/20260417/1776436011993831.jpg",
       "link": "",
       "title": "",
       "subtitle": "",
@@ -1347,7 +1347,7 @@
     {
       "id": 10,
       "gid": "home2",
-      "pic": "https://www.alcochrom.com/static/upload/image/20260417/1776435985468980.jpg",
+      "pic": "/static/upload/image/20260417/1776435985468980.jpg",
       "link": "",
       "title": "",
       "subtitle": "",

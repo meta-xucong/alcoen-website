@@ -2155,13 +2155,15 @@ const classicLayout = ({ site, lang, title, description, activeKey, currentPath,
   <style>
     .b-a:after { background-image: url(${localAssetUrl("/skin/images/bg1.jpg")}); }
     @media(min-width: 900px) { .h-e { width:100%; background-image: url(${localAssetUrl("/skin/images/navbg.jpg")}); } }
-    .h-b { height: .66rem; overflow: hidden; }
+    .h-b { height: 1.38rem; overflow: hidden; }
     .h-c { display: block; width: 100%; height: 100%; object-fit: contain; }
-    .h-c-custom { transform: scale(1.22); transform-origin: left center; }
+    .h-c-custom { transform: scale(1.0); transform-origin: left center; }
+    .h-a { height: 1.72rem; }
     @media(max-width: 900px) {
-      .h-b { height: 20px; }
+      .h-b { height: 40px; }
       .h-c { width: 100%; height: 100%; }
-      .h-c-custom { transform: scale(1.25); transform-origin: left center; }
+      .h-c-custom { transform: scale(1.0); transform-origin: left center; }
+      .h-a { height: auto; }
     }
     .k-visual { width: 6.4rem; height: 4rem; background: #fff; position: relative; overflow: hidden; }
     .k-visual .k-e { width: 100%; height: 100%; object-fit: contain; display: block; }
